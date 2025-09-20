@@ -96,7 +96,7 @@ Trong Linux, tiến trình có thể trải qua **7 trạng thái chính**:
 
 #  Câu 3: Code C trên Linux sử dụng `getpid()`, `getppid()`, `fork()`, `exit()`
 
-### Code ví dụ:
+
 
 ```c
 #include <stdio.h>
@@ -158,7 +158,7 @@ Trong C, thư viện **`<pthread.h>`** cung cấp API để làm việc với đ
 * `pthread_exit()` → Kết thúc thread hiện tại.
 * `pthread_join()` → Gộp (chờ) một thread khác kết thúc.
 
-🔹 **Chú ý**:
+
 
 * Biến **local** (cục bộ) được lưu riêng trên stack từng thread.
 * Biến **global** (toàn cục) được chia sẻ giữa tất cả các thread.
@@ -273,4 +273,5 @@ Main ket thuc. Global counter = 9
    * Có. Thứ tự in ra và giá trị biến `global` sẽ thay đổi do race condition.
 
 ---
+
 
